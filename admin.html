@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet" href="admin.css">
+
+</head>
+
+<body>
+
+<h1>Admin Dashboard</h1>
+
+<h2>Add Paper</h2>
+
+<form id="paperForm">
+
+<input type="text" id="subject" placeholder="Subject" required>
+
+<input type="number" id="year" placeholder="Year" required>
+
+<input type="text" id="medium" placeholder="Medium" required>
+
+<input type="text" id="part" placeholder="Part (I / II)" required>
+
+<input type="text" id="type" placeholder="Type (Paper / Marking Scheme)" required>
+
+<input type="text" id="fileUrl" placeholder="File URL" required>
+
+<br>
+<button type="submit">Add Paper</button>
+
+</form>
+
+<h2>All Papers</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>ID</th>
+<th>Subject</th>
+<th>Year</th>
+<th>Medium</th>
+<th>Part</th>
+<th>Type</th>
+<th>Actions</th>
+</tr>
+
+</thead>
+
+<tbody id="paperTable">
+
+</tbody>
+
+</table>
+
+<button onclick="logout()">Logout</button>
+
+<script src="admin.js"></script>
+
+</body>
+
+</html>
